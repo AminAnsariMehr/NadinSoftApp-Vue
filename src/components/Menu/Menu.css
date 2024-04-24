@@ -8,20 +8,22 @@
     box-shadow: var(--frame-shadow-color);
 }
 
-.menuItem {
+
+.menuItem__routeLink {
     width: 100%;
     padding: 8px;
+    text-decoration: none;
     border-radius: 12px;
+    user-select: none;
+    cursor: pointer;
+    transition: var(--default-transition);
     display: flex;
     justify-content: flex-start;
     align-items: center;
     gap: 6px;
-    user-select: none;
-    cursor: pointer;
-    transition: var(--default-transition);
 }
 
-.menuItem:hover {
+.menuItem__routeLink:hover {
     background: var(--menuItem-hover-bg);
 }
 
@@ -42,21 +44,61 @@
     letter-spacing: 1px;
 }
 
-.dashboardPage,
-.todoPage,
-.weatherPage,
-.profilePage {
-    display: none;
-}
-
-.showPage {
-    display: flex;
-}
-
-.activePage {
+.routePageActive {
     background: var(--app-secondary-color);
 }
 
-.activePage .menuItem__icon {
+.routePageActive .menuItem__icon {
     color: var(--app-primary-color);
+}
+
+@media (max-width: 1024px) {
+    .menu {
+        width: 25%;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .menu {
+        width: 15%;
+    }
+}
+
+@media (max-width: 640px) {
+    .menu {
+        padding: 1.75rem 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .menuItem {
+        padding: 0;
+        border-radius: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menuItem__title {
+        display: none;
+    }
+}
+
+
+@media (max-width: 400px) {
+    .menu {
+        width: 12%;
+    }
+
+    .menuItem {
+        padding: 0;
+    }
+
+    .menuItem__icon {
+        font-size: 1rem;
+    }
 }
