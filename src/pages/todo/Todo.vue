@@ -1,5 +1,4 @@
 <template>
-
     <div class="todoPage" id="todoPage">
         <section class="todoApp">
             <header class="todoApp__header">My TODO</header>
@@ -34,5 +33,7 @@
             </div>
         </section>
     </div>
-
 </template>
+
+<style src="./Todo.css"></style>
+<script src="./Todo.js"></script>
