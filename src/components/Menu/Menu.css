@@ -1,32 +1,3 @@
-@import url(./../styles/root/appRoot.css);
-@import url(./../fontAwsomePackage/fontIcons/all.css);
-@import url(./reset.css);
-@import url(./fonts.css);
-@import url(./pages/dashboardPage.css);
-@import url(./pages/todoPage.css);
-@import url(./pages/weatherPage.css);
-@import url(./pages/profilePage.css);
-@import url(./components/buttons.css);
-
-.container {
-    width: 100%;
-    height: 100vh;
-    background: var(--app-bg);
-    font-family: Poppins;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-}
-
-.main {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
-
 .menu {
     width: 15%;
     height: var(--frame-height-size);
