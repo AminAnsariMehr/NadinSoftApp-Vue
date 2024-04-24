@@ -1,0 +1,725 @@
+@media (min-width:1536px) and (max-width: 1920px) {
+    .menu {
+        width: 20%;
+    }
+
+    .menuItem {
+        padding: 8px;
+        gap: 1rem;
+    }
+
+    .menuItem__icon {
+        font-size: 2rem;
+    }
+
+    .menuItem__title {
+        font-size: 1.25rem;
+        letter-spacing: 2px;
+    }
+
+    .dashboardPage,
+    .todoPage,
+    .weatherPage,
+    .profilePage {
+        width: 80%
+    }
+
+    .dashboardApp {
+        gap: 1.5rem;
+    }
+
+    .analogClock {
+        width: 450px
+    }
+
+    .clock__number {
+        inset: 20px;
+    }
+
+    .dashboardPage__message {
+        font-size: 2.5rem;
+    }
+
+    .dashboardPage__currentDate {
+        font-size: 1.5rem;
+    }
+
+    .todoListWrapper__header,
+    .doneListWrapper__header {
+        font-size: 1.25rem;
+    }
+
+    .todoList__todoCheckIcon,
+    .todoList__todoEditIcon,
+    .todoList__todoDeleteIcon,
+    .taskInputWrapper__btn,
+    .doneList__restoreIcon,
+    .doneList__deleteIcon {
+        font-size: 20px;
+    }
+
+    .weatherApp__weatherData {
+        width: 45%;
+    }
+
+    .profilePage__renameLabel,
+    .profilePage__avatarLabel,
+    .profilePage__themeTitle {
+        font-size: 1.5rem;
+    }
+
+
+}
+
+/* @media (min-width: 1024px)and (max-width: 1536px) {} */
+
+
+
+/* ------------------------    tablet    --------------------------- */
+@media (max-width: 1024px) {
+    .loginPage__loginPageFormTitles {
+        font-size: 1.25rem;
+    }
+
+    .loginPage__loginPageInputName {
+        width: 80%;
+    }
+
+    .menu {
+        width: 25%;
+    }
+
+    .dashboardPage,
+    .todoPage,
+    .weatherPage,
+    .profilePage {
+        width: 75%;
+    }
+
+    .dashboardApp,
+    .todoApp,
+    .weatherApp,
+    .profilePage__settingsForm {
+        width: 100%;
+        padding: 1rem;
+        overflow: scroll;
+    }
+
+    .todoApp__header,
+    .todoApp__innerContainer {
+        width: 100%;
+    }
+
+    .todoApp__taskInput {
+        padding: 10px 16px;
+    }
+
+    .todoApp__taskInput::placeholder {
+        font-size: 1rem;
+    }
+
+    .todoList__todoItems,
+    .doneList__doneItems {
+        height: auto;
+        padding: 1rem 6px;
+        letter-spacing: 0px;
+        border-radius: 6px;
+    }
+
+    .weatherApp__searchBoxWrapper {
+        width: 95%;
+    }
+
+    .weatherApp__searchCityInput {
+        padding: 10px 50px;
+    }
+
+    .weatherApp__searchCityInput::placeholder {
+        font-size: 1rem;
+    }
+
+    .weatherApp__cityName,
+    .weatherApp__locationIcon {
+        font-size: 2rem;
+    }
+
+    .weatherApp__weatherData {
+        width: 90%;
+    }
+
+    .weatherApp__windDirectionNumber,
+    .weatherApp__windDirectionUnit,
+    .weatherApp__dailyStatus,
+    .weatherApp__windSpeedNumber,
+    .weatherApp__windSpeedUnit {
+        font-size: 1rem;
+    }
+
+    .profilePage__title {
+        display: none;
+    }
+
+    .profilePage__UserSection {
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+
+    .profilePage__userOptions,
+    .profilePage__userData {
+        width: 100%;
+    }
+
+    .profilePage__userOptions {
+        padding: 0 2rem;
+    }
+
+    .profilePage__userData {
+        flex-direction: row;
+    }
+
+    .profilePage__avatarFrame {
+        width: 130px;
+    }
+
+    .profilePage__avatarImage {
+        width: 120px;
+    }
+
+    .profilePage__usernameDisplay,
+    .profilePage__userGenderIcon {
+        font-size: 1.5rem;
+    }
+
+    .profilePage__renameLabel,
+    .profilePage__avatarLabel,
+    .profilePage__themeTitle {
+        font-size: 1rem;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .loginPage__loginPageFormTitles {
+        font-size: 1.25rem;
+    }
+
+    .loginPage__loginPageInputName {
+        width: 80%;
+    }
+
+    .loginPage__loginPageInputName::placeholder {
+        font-size: 1rem;
+    }
+
+    .menu {
+        width: 15%;
+    }
+
+    .dashboardPage,
+    .todoPage,
+    .weatherPage,
+    .profilePage {
+        width: 75%;
+    }
+
+    .dashboardApp,
+    .todoApp,
+    .weatherApp,
+    .profilePage__settingsForm {
+        width: 100%;
+        padding: 1rem;
+        overflow: scroll;
+    }
+
+    .todoApp__header,
+    .todoApp__innerContainer {
+        width: 100%;
+    }
+
+    .todoApp__taskInput {
+        padding: 10px 16px;
+    }
+
+    .todoApp__taskInput::placeholder {
+        font-size: 1rem;
+    }
+
+    .todoList__todoItems,
+    .doneList__doneItems {
+        height: auto;
+        padding: 1rem 6px;
+        letter-spacing: 0px;
+        border-radius: 6px;
+    }
+
+    .weatherApp__searchBoxWrapper {
+        width: 95%;
+    }
+
+    .weatherApp__searchCityInput {
+        padding: 10px 50px;
+    }
+
+    .weatherApp__searchCityInput::placeholder {
+        font-size: 1rem;
+    }
+
+    .weatherApp__cityName,
+    .weatherApp__locationIcon {
+        font-size: 2rem;
+    }
+
+    .weatherApp__weatherData {
+        width: 90%;
+    }
+
+    .weatherApp__windDirectionNumber,
+    .weatherApp__windDirectionUnit,
+    .weatherApp__dailyStatus,
+    .weatherApp__windSpeedNumber,
+    .weatherApp__windSpeedUnit {
+        font-size: 1rem;
+    }
+
+    .profilePage__title {
+        display: none;
+    }
+
+    .profilePage__UserSection {
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+
+    .profilePage__userOptions,
+    .profilePage__userData {
+        width: 100%;
+    }
+
+    .profilePage__userOptions {
+        padding: 0 2rem;
+    }
+
+    .profilePage__userData {
+        flex-direction: row;
+    }
+
+    .profilePage__avatarFrame {
+        width: 130px;
+    }
+
+    .profilePage__avatarImage {
+        width: 120px;
+    }
+
+    .profilePage__usernameDisplay,
+    .profilePage__userGenderIcon {
+        font-size: 1.5rem;
+    }
+
+    .profilePage__renameLabel,
+    .profilePage__avatarLabel,
+    .profilePage__themeTitle {
+        font-size: 1rem;
+    }
+
+}
+
+
+@media (max-width: 640px) {
+    .loginPage {
+        padding: 3rem 0;
+    }
+
+    .loginPage__welcomeSlide {
+        gap: 1.5rem;
+    }
+
+    .loginPage__welcomeMessage {
+        font-size: 1.5rem;
+        line-height: 2.25rem;
+    }
+
+    .loginPage__welcomeMessage-small {
+        font-size: 1.125rem;
+    }
+
+    .loginPage__welcomeGoBtn {
+        margin-top: 0;
+    }
+
+    .loginPage__userDataForm {
+        padding: 0;
+    }
+
+    .loginPage__loginPageInputName {
+        width: 80%;
+        margin-bottom: 0;
+        padding: 10px 20px;
+        font-size: 1.1rem;
+        border-radius: 6px;
+    }
+
+    .loginPage__loginPageInputName::placeholder {
+        font-size: 1rem;
+    }
+
+    .loginPage__loginPageFormTitles {
+        font-size: 1.125rem;
+    }
+
+    .loginPage__genderWrapper {
+        width: 60%;
+        margin-bottom: 0;
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    .loginPage__radioWrapper {
+        padding: 5px;
+        gap: 6px;
+    }
+
+    .menu {
+        padding: 1.75rem 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .menuItem {
+        padding: 0;
+        border-radius: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menuItem__title {
+        display: none;
+    }
+
+    .dashboardApp,
+    .todoApp,
+    .weatherApp,
+    .profilePage__settingsForm {
+        width: 95%;
+        padding: 1.5rem 0;
+        justify-content: center;
+    }
+
+    .digitalClock {
+        border-radius: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .dashboardPage__currentDate {
+        font-size: 16px;
+    }
+
+    .dashboardPage__message {
+        font-size: 20px;
+    }
+
+    .analogClock {
+        display: none;
+    }
+
+    .todoApp__header {
+        padding: 10px;
+        font-size: 1.5rem;
+    }
+
+    .todoApp__innerContainer {
+        width: 95%;
+        gap: 10px;
+    }
+
+    .todoApp__taskInputWrapper {
+        position: relative;
+        gap: 0.5rem;
+    }
+
+    .todoApp__taskInput {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 6px;
+    }
+
+    .todoApp__taskInput::placeholder {
+        font-size: 14px;
+    }
+
+    .todoApp__taskSubmitIcon {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        background: var(--app-primary-color);
+        border-radius: 4px;
+        top: 50%;
+        right: 5px;
+        transform: translateY(-50%);
+    }
+
+    .todoApp__taskSubmitIcon::after,
+    .todoApp__taskSubmitIcon::before,
+    .GlassMorphism__LightSpan {
+        display: none;
+    }
+
+    .todoApp__listsContainer {
+        flex-direction: column;
+    }
+
+    .todoListWrapper,
+    .doneListWrapper {
+        width: 100%;
+        padding: 0 5px;
+        height: calc(calc(100% - 1rem) / 2);
+        border-radius: 10px;
+        box-shadow: var(--frame-shadow-color);
+    }
+
+    .todoList,
+    .doneList {
+        gap: 10px;
+    }
+
+    .todoList__todoItems,
+    .doneList__doneItems {
+        height: auto;
+        padding: 1rem 6px;
+        letter-spacing: 0px;
+        border-radius: 6px;
+    }
+
+    .weatherApp__searchBoxWrapper {
+        position: relative;
+        gap: 0.5rem;
+    }
+
+    .weatherApp__searchIcon {
+        font-size: 16px;
+        font-weight: 500;
+        transform: translate(5px, -50%);
+    }
+
+    .weatherApp__searchCityInput {
+        width: 100%;
+        padding: 10px 26px;
+        font-size: 16px;
+        border-radius: 6px;
+    }
+
+    .weatherApp__searchCityInput::placeholder {
+        font-size: 14px;
+    }
+
+    .weatherApp__searchCityBtn {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        background: var(--app-primary-color);
+        border-radius: 4px;
+        top: 50%;
+        right: 5px;
+        transform: translateY(-50%);
+    }
+
+    .weatherApp__searchCityBtn::after,
+    .weatherApp__searchCityBtn::before {
+        display: none;
+    }
+
+    .weatherApp__locationData {
+        gap: 0.3rem;
+    }
+
+    .weatherApp__cityName,
+    .weatherApp__locationIcon {
+        font-size: 24px;
+    }
+
+    .weatherApp__dateData {
+        font-size: 12px;
+    }
+
+    .weatherApp__statusIndicator {
+        width: 200px;
+        height: 100px;
+    }
+
+    .weatherApp__currentTempNumber {
+        font-size: 5rem;
+    }
+
+    .weatherApp__currentTempNumber::after {
+        width: 20px;
+        border: 4px solid var(--app-primary-color);
+        left: 90%;
+    }
+
+    .weatherApp__tempStatusImage {
+        width: 80px;
+        transform: translate(-10px, 12px);
+    }
+
+    .weatherApp__weatherData {
+        width: 95%;
+        border-radius: 20px;
+    }
+
+    .weatherApp__dailyIcon,
+    .weatherApp__windSpeedIcon,
+    .weatherApp__windDirectionIcon {
+        font-size: 1.5rem;
+    }
+
+    .weatherApp__windDirectionNumber,
+    .weatherApp__windDirectionUnit,
+    .weatherApp__dailyStatus,
+    .weatherApp__windSpeedNumber,
+    .weatherApp__windSpeedUnit {
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+
+    .weatherApp__windDirectionTitle,
+    .weatherApp__dailyTitle,
+    .weatherApp__windSpeedTitle {
+        font-size: 12px;
+    }
+
+
+    .profilePage__renameInput {
+        font-size: 1.125rem;
+    }
+
+    .profilePage__avatarImageQuestion {
+        line-height: 20px;
+    }
+
+    .profilePage__avatarUrlLabel {
+        width: 100%;
+        font-size: 16px;
+    }
+
+
+    .profilePage__saveSettingBtn {
+        display: flex;
+    }
+
+    .profilePage__saveSettingBtn::before,
+    .profilePage__saveSettingBtn::after {
+        display: flex;
+    }
+
+    .GlassMorphism__LightSpan--saveSetting {
+        display: flex;
+    }
+}
+
+
+@media (max-width: 400px) {
+    .menu {
+        width: 12%;
+    }
+
+    .dashboardPage,
+    .todoPage,
+    .weatherPage,
+    .profilePage {
+        width: 85%;
+        justify-content: center;
+    }
+
+    .menuItem {
+        padding: 0;
+    }
+
+    .menuItem__icon {
+        font-size: 1rem;
+    }
+
+    .analogClock {
+        display: none;
+    }
+
+    .digitalClock {
+        flex-direction: column;
+    }
+
+    .todoListWrapper__header,
+    .doneListWrapper__header {
+        font-size: 14px;
+    }
+
+    .todoList__todoItems,
+    .doneList__doneItems {
+        gap: 10px;
+    }
+
+    .todoList__todoTask,
+    .doneList__doneTask {
+        font-size: 14px;
+    }
+
+    .todoList__todoCheckIcon,
+    .todoList__todoEditIcon,
+    .todoList__todoDeleteIcon,
+    .taskInputWrapper__btn,
+    .doneList__restoreIcon,
+    .doneList__deleteIcon {
+        font-size: 12px;
+    }
+
+    .profilePage__renameInput {
+        padding: 6px 1rem;
+        font-size: 14px;
+        border-radius: 6px;
+    }
+
+    .profilePage__userOptions {
+        padding: 0 1rem;
+    }
+
+    .profilePage__avatarImageQuestion {
+        font-size: 14px;
+    }
+
+    .profilePage__avatarUrlLabel {
+        font-size: 12px;
+
+    }
+
+    .profilePage__avatarUrlInput {
+        padding: 8px 1rem;
+        font-size: 14px;
+    }
+
+    .profilePage__avatarCloseIcon {
+        font-size: 16px;
+    }
+
+    .profilePage__avatarFrame {
+        width: 100px;
+    }
+
+    .profilePage__avatarImage {
+        width: 80px;
+    }
+
+    .profilePage__saveSettingBtn {
+        width: 100px;
+        height: 40px;
+        border-radius: 6px;
+    }
+
+    .GlassMorphism__LightSpan--saveSetting {
+        font-size: 14px;
+        border-radius: 6px;
+    }
+}

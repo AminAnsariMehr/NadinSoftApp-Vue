@@ -1,0 +1,55 @@
+/* ------------------  General ------------------- */
+:root {
+    --frame-with-size: 80%;
+    --frame-height-size: 85%;
+    --frame-shadow-color: 0px 4px 4px rgba(0, 0, 0, 0.23);
+    --frame-padding-size: 3rem;
+    --frame-border-radius: 2.5rem;
+    --default-transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, border-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* ------------------  Light Mode ------------------ */
+:root[data-theme="light"] {
+    --app-bg: #e9eaf2;
+    --frame-bg: #d9d9d95c;
+    --menuItem-hover-bg: #F1F2F7;
+    --app-primary-color: #5157eb;
+    --app-secondary-color: #00ddff;
+    --clock-bg: #160f29;
+    --clock-number-color: #00ddff;
+    --slider-clock-bg: #00ddffca;
+    --weather-icons-color: #4c4ddb;
+    --weather-city-color: #3a3c8f;
+    --weather-data-bg: #e9e7ff;
+    --weather-Date-color: #8986ef;
+    --profile-urlInput-shadow: #00ddff3f;
+    --profile-urlInput-color: #808080;
+    --toggle-button-bg: #f5f5f6;
+    --toggle-circle-bg: #ffd371;
+    --toggle-sun-color: #997f44;
+    --toggle-moon-color: #b1b0b5;
+    --toggle-circle-position: translateX(4px);
+}
+
+/* ------------------  Dark Mode ------------------ */
+:root[data-theme="dark"] {
+    --app-bg: #2d2c35;
+    --frame-bg: #514e4e3d;
+    --menuItem-hover-bg: #454545;
+    --app-primary-color: rgb(0, 0, 0);
+    --app-secondary-color: #ffad00;
+    --clock-bg: #23272f;
+    --clock-number-color: #ffad00;
+    --slider-clock-bg: #00ddffca;
+    --weather-icons-color: #4c4ddb;
+    --weather-city-color: #3a3c8f;
+    --weather-data-bg: #e9e7ff;
+    --weather-Date-color: #8986ef;
+    --profile-urlInput-shadow: #ffad003f;
+    --profile-urlInput-color: #808080;
+    --toggle-button-bg: #2d2c35;
+    --toggle-circle-bg: #7190ff;
+    --toggle-sun-color: #77757e;
+    --toggle-moon-color: #b1b0b5;
+    --toggle-circle-position: translateX(53px);
+}
