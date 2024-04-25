@@ -1,18 +1,14 @@
 <template>
-
     <div class="weatherPage" id="weatherPage">
         <div class="weatherApp">
             <form class="weatherApp__searchBoxWrapper" id="weatherSearchBox">
-                <i class="fa-light fa-magnifying-glass weatherApp__searchIcon"></i>
+                <i class="fa-solid fa-magnifying-glass weatherApp__searchIcon"></i>
                 <input type="text" class="weatherApp__searchCityInput" id="searchCityInput" placeholder="Search your city..." autocomplete="off" />
-
-                <button class="weatherApp__searchCityBtn GlassMorphism__Button GlassMorphism__Button--Color1" id="searchCityBtn">
-                    <span class="GlassMorphism__LightSpan">Search</span>
-                </button>
+                <Button></Button>
             </form>
 
             <div class="weatherApp__locationData">
-                <i class="fa-light fa-location-dot weatherApp__locationIcon"></i>
+                <i class="fa-solid fa-location-dot weatherApp__locationIcon"></i>
                 <p class="weatherApp__cityName" id="cityName">Tehran</p>
             </div>
             <p class="weatherApp__dateData" id="dateData"></p>
@@ -20,7 +16,7 @@
                 <div class="weatherApp__currentTempWrapper">
                     <span class="weatherApp__currentTempNumber" id="temperatureNumber"></span>
                 </div>
-                <img src="./assets/decorations/weather/cloudy.png" class="weatherApp__tempStatusImage" />
+                <img src="./../../../src/assets/decorations/cloudy.png" class="weatherApp__tempStatusImage" />
             </div>
 
             <section class="weatherApp__weatherData">
@@ -42,7 +38,7 @@
                 </div>
 
                 <div class="weatherApp__windSpeedData">
-                    <i class="fa-regular fa-wind weatherApp__windSpeedIcon"></i>
+                    <i class="fa-solid fa-wind weatherApp__windSpeedIcon"></i>
                     <div class="weatherApp__windSpeedDisplay">
                         <span class="weatherApp__windSpeedNumber" id="windSpeedNumber"></span>
                         <span class="weatherApp__windSpeedUnit" id="windSpeedUnit"></span>
@@ -52,5 +48,9 @@
             </section>
         </div>
     </div>
-
 </template>
+
+
+
+<style src="./Weather.css"></style>
+<script src="./Weather.js"></script>

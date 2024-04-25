@@ -6,9 +6,7 @@
             <div class="todoApp__innerContainer">
                 <form class="todoApp__taskInputWrapper" id="addTaskForm">
                     <input type="text" class="todoApp__taskInput" placeholder="Add a new task" />
-                    <button class="todoApp__taskSubmitIcon GlassMorphism__Button GlassMorphism__Button--Color1" id="addTaskBtn">
-                        <span class="GlassMorphism__LightSpan">Add task</span>
-                    </button>
+                    <Button></Button>
                 </form>
 
                 <div class="todoApp__listsContainer">

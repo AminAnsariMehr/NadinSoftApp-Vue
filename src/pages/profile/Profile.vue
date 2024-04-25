@@ -39,13 +39,17 @@
 
                 <div class="profilePage__userData">
                     <div class="profilePage__avatarFrame">
-                        <img class="profilePage__avatarImage" src="./assets/decorations/male.png" id="userAvatarImage" />
+                        <img class="profilePage__avatarImage" src="./../../../src/assets/decorations/male.png" id="userAvatarImage" />
                     </div>
                     <p class="profilePage__usernameDisplay" id="profileUserNameDisplay"></p>
-                    <i class="fa-regular fa-mars profilePage__userGenderIcon" id="userGenderIcon"></i>
+                    <i class="fa-solid fa-mars profilePage__userGenderIcon" id="userGenderIcon"></i>
                 </div>
             </div>
         </form>
     </div>
 
 </template>
+
+
+<style src="./Profile.css"></style>
+<script src="./Profile.js"></script>
