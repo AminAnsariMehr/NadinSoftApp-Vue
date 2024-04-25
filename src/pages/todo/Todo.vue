@@ -1,12 +1,12 @@
-<template>
+s<template>
     <div class="todoPage" id="todoPage">
         <section class="todoApp">
             <header class="todoApp__header">My TODO</header>
 
             <div class="todoApp__innerContainer">
-                <form class="todoApp__taskInputWrapper" id="addTaskForm">
-                    <input type="text" class="todoApp__taskInput" placeholder="Add a new task" />
-                    <Button></Button>
+                <form class="todoApp__taskInputWrapper" @submit.prevent="addToDo">
+                    <input type="text" class="todoApp__taskInput" v-model="taskInput" placeholder="Add a new task" />
+                    <!-- <Button></Button> -->
                 </form>
 
                 <div class="todoApp__listsContainer">
