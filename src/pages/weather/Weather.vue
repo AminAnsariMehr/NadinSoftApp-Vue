@@ -1,15 +1,15 @@
 <template>
     <div class="weatherPage" id="weatherPage">
         <div class="weatherApp">
-            <form class="weatherApp__searchBoxWrapper" @submit.prevent.enter="fetchWeather">
+            <form class="weatherApp__searchBoxWrapper" @submit.prevent="findCity">
                 <i class="fa-solid fa-magnifying-glass weatherApp__searchIcon"></i>
-                <input type="text" class="weatherApp__searchCityInput" v-model="inputSearchValue" placeholder="Search your city..." autocomplete="off" />
+                <input type="text" class="weatherApp__searchCityInput" ref="inputSearch" v-model="inputSearchValue" placeholder="Search your city..." autocomplete="off" />
                 <Button></Button>
             </form>
 
             <div class="weatherApp__locationData">
                 <i class="fa-solid fa-location-dot weatherApp__locationIcon"></i>
-                <p class="weatherApp__cityName" id="cityName">Tehran</p>
+                <p class="weatherApp__cityName" v-text=cityName></p>
             </div>
             <p class="weatherApp__dateData" id="dateData"></p>
             <div class="weatherApp__statusIndicator">
@@ -20,7 +20,7 @@
             </div>
             <section class="weatherApp__weatherData">
                 <div class="weatherApp__windDirectionData">
-                    <i class="fa-solid fa-location-arrow weatherApp__windDirectionIcon" id="windArrow"></i>
+                    <i class="fa-solid fa-location-arrow weatherApp__windDirectionIcon" :style="{ transform: `rotate(${windDirection}deg)` }"></i>
                     <div class="weatherApp__windDirectionDisplay">
                         <span class="weatherApp__windDirectionNumber" v-text="windDirection"></span>
                         <span class="weatherApp__windDirectionUnit" v-text="windDirectionUnit"></span>

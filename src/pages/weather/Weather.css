@@ -42,6 +42,7 @@
     width: 80%;
     padding: 14px 50px;
     font-size: 1.25rem;
+    text-transform: capitalize;
     background: transparent;
     box-shadow: var(--frame-shadow-color);
     border-radius: 1rem;

@@ -1,10 +1,10 @@
+import { onBeforeMount } from 'vue';
 import Button from './../../../src/components/Button/Button.vue';
 import { WeatherData } from './WeatherData.js';
 
 
 export default {
     name: "weather app",
-
     components: {
         "Button": Button,
     },
@@ -12,6 +12,7 @@ export default {
     data() {
         return {
             inputSearchValue: "",
+            cityName: "Tehran",
             lat: "35.7000",
             lng: "51.4167",
             temperature: "",
@@ -23,17 +24,29 @@ export default {
         }
     },
 
+    beforeMount() {
+        this.fetchWeather()
+    },
+
     methods: {
+        findCity() {
+            for (const item of WeatherData) {
+                if (this.inputSearchValue === item.city.toLowerCase()) {
+                    this.lat = item.lat;
+                    this.lng = item.lng;
+                    this.cityName = this.inputSearchValue;
+                    this.fetchWeather()
+                }
+            }
+        },
         fetchWeather() {
             fetch(`https://api.open-meteo.com/v1/forecast?latitude=${this.lat}8&longitude=${this.lng}&current_weather=true`)
                 .then(res => { return res.json() })
                 .then(this.setResult);
         },
-
         setResult(results) {
             const currentWeather = results.current_weather;
             const currentWeatherUnits = results.current_weather_units;
-
             this.temperature = Math.round(currentWeather.temperature);
             this.windSpeed = Math.round(currentWeather.windspeed);
             this.windDirection = Math.round(currentWeather.winddirection);
@@ -42,8 +55,4 @@ export default {
             this.dailyStatus = currentWeather.is_day === 0 ? (this.dailyStatus = "Night") : (this.dailyStatus = "Day")
         }
     }
-
-
-
-
 }
