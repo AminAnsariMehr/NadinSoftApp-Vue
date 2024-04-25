@@ -1,16 +1,24 @@
+import { onMounted } from 'vue';
 import Button from './../../../src/components/Button/Button.vue'
-// import { v4 as uuidv4 } from 'uuid' // If using uuid for IDs
 
 export default {
     name: "ToDO",
     data() {
         return {
             taskInput: "",
-            todos: [],
-
+            todosItem: "",
+            todos: localStorage.getItem("todos") ? JSON.parse(localStorage.getItem("todos")) : [],
         }
     },
     methods: {
+        // test(){
+        //     // this.todos != [] ? this.todos
+        //     if (this.todos){
+        //         this.todos = this.todos
+        //     }
+        // }
+
+
         addToDo() {
             const taskTitle = this.taskInput.trim();
             if (taskTitle) {
@@ -19,39 +27,9 @@ export default {
                     "taskTitle": taskTitle
                 })
             }
-
-            console.log(JSON.stringify(this.todos))
+            localStorage.setItem("todos", JSON.stringify(this.todos))
+            this.taskInput = "";
+            console.log(todos.value)
         },
-        addDone() {
-
-        }
     }
 }
-
-/* import ToDoItem from './components/ToDoItem.vue'
-import AddToDo from './components/AddToDo.vue'
-import { v4 as uuidv4 } from 'uuid' // If using uuid for IDs
-
-export default {
-  components: {
-    ToDoItem,
-    AddToDo
-  },
-  data() {
-    return {
-      tasks: [],
-    }
-  },
-  methods: {
-    addTask(newTask) {
-      this.tasks.push({
-        id: uuidv4() || Math.random().toString(36).substring(2, 15), // Generate unique ID
-        text: newTask,
-        completed: false
-      })
-    },
-    removeTask(id) {
-      this.tasks = this.tasks.filter(task => task.id !== id)
-    }
-  }
-} */

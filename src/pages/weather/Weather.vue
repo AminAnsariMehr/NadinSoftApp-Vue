@@ -11,7 +11,7 @@
                 <i class="fa-solid fa-location-dot weatherApp__locationIcon"></i>
                 <p class="weatherApp__cityName" v-text=cityName></p>
             </div>
-            <p class="weatherApp__dateData" id="dateData"></p>
+            <p class="weatherApp__dateData" v-text="date"></p>
             <div class="weatherApp__statusIndicator">
                 <div class="weatherApp__currentTempWrapper">
                     <span class="weatherApp__currentTempNumber" v-text="temperature" id="temperatureNumber"></span>

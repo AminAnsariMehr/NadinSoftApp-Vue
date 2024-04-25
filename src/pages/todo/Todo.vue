@@ -16,7 +16,14 @@ s<template>
                             <span>-</span>
                             <span class="todoListWrapper__tasksNumber" id="toDoTaskNumber">0</span>
                         </header>
-                        <ul class="todoList" id="todoList"></ul>
+                        <ul class="todoList" id="todoList">
+                            <li class="todoList__todoItems" v-for="item in todos.length">
+                                <span class="todoList__todoTask"></span>
+                                <i class="fa-light fa-check todoList__todoCheckIcon"></i>
+                                <i class="fa-light fa-pen-to-square todoList__todoEditIcon"></i>
+                                <i class="fa-light fa-trash todoList__todoDeleteIcon"></i>
+                            </li>
+                        </ul>
                     </section>
 
                     <section class="doneListWrapper">

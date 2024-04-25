@@ -1,4 +1,3 @@
-import { onBeforeMount } from 'vue';
 import Button from './../../../src/components/Button/Button.vue';
 import { WeatherData } from './WeatherData.js';
 
@@ -21,21 +20,29 @@ export default {
             windSpeedUnit: "",
             windDirectionUnit: "",
             dailyStatus: "",
+            date: new Date().toLocaleString("default", {
+                weekday: "long",
+                month: "long",
+                day: "numeric",
+                year: "numeric",
+            })
         }
     },
-
     beforeMount() {
         this.fetchWeather()
     },
-
     methods: {
+        removeAccents(str) {
+            return str.normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+        },
         findCity() {
             for (const item of WeatherData) {
-                if (this.inputSearchValue === item.city.toLowerCase()) {
+                if (this.inputSearchValue === this.removeAccents(item.city).toLowerCase()) {
                     this.lat = item.lat;
                     this.lng = item.lng;
                     this.cityName = this.inputSearchValue;
-                    this.fetchWeather()
+                    this.inputSearchValue = "";
+                    this.fetchWeather();
                 }
             }
         },
