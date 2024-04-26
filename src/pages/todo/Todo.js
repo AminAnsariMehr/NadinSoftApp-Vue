@@ -29,7 +29,7 @@ export default {
             }
             localStorage.setItem("todos", JSON.stringify(this.todos))
             this.taskInput = "";
-            console.log(todos.value)
+            // console.log(todos.value)
         },
     }
 }
