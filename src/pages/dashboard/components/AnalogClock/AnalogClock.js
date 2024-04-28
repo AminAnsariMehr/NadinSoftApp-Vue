@@ -1,16 +1,15 @@
-
 export default {
     data() {
         return {
-            // time: new Date(),
             currentHour: new Date().getHours(),
             currentMinute: new Date().getMinutes(),
-            hourElement: "",
-            minuteElement: "",
-            secondElement: "",
+            hourElement: 0,
+            minuteElement: 0,
+            secondElement: 0,
         }
     },
     mounted() {
+        this.updateClockElements()
         setInterval(this.updateClockElements, 1000);
     },
     methods: {

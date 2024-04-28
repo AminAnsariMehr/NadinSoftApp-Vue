@@ -9,6 +9,7 @@
         <div class="clock__circles clock__hourCircle" :style="{ transform: `rotateZ(${hourElement}deg)` }">
             <i class="clock__Indicators clock__hourIndicator"></i>
         </div>
+
         <span class="clock__number" :style="`--i: ${num}`" v-for=" num in 12"><b class="clock__number--bold">{{ num }}</b></span>
     </div>
 </template>
